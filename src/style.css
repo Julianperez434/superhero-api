@@ -1,0 +1,131 @@
+:root {
+  --bold-font-color: #d14c46;
+}
+
+body {
+  font-family: Arial;
+  background: rgb(103, 28, 170);
+  background: radial-gradient(
+    circle,
+    rgba(103, 28, 170, 1) 0%,
+    rgba(222, 60, 84, 1) 100%
+  );
+  background-image: linear-gradient(to right, #671caa, #de3c54);
+}
+
+.main-container {
+  background-color: black;
+  margin: 3em;
+  padding: 2em 1.5em;
+  width: 50em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: bold;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.title-span {
+  font-weight: bold;
+  color: var(--bold-font-color);
+}
+
+.render-container {
+  margin-top: 2em;
+  display: flex;
+  gap: 3em;
+}
+
+.hero-image {
+  width: 20em;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+}
+
+.right-container {
+  color: white;
+}
+
+.hero-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.sub-header {
+  display: flex;
+}
+
+.sub-header-list {
+  font-weight: bold;
+  letter-spacing: -0.0001em;
+  border-bottom: 0.25em solid var(--bold-font-color);
+  margin-bottom: 2em;
+  padding-bottom: 0.25em;
+}
+
+.data-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.stat-row {
+  padding: 1em 1em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  background-color: #1a1919;
+  color: darkgrey;
+  width: 32em;
+}
+
+.icon-stat {
+  display: flex;
+}
+
+.icon {
+  background-color: var(--bold-font-color);
+  --icon-width: 0.8em;
+  width: var(--icon-width);
+  aspect-ratio: 1/1;
+  border-radius: var(--icon-width);
+  margin-right: 2em;
+}
+
+.stat-name {
+  font-size: 0.8rem;
+}
+
+.stat-score {
+  color: #dbbd27;
+  font-weight: bold;
+}
+
+input {
+  background-color: black;
+  border: 0.1em solid darkgrey;
+  padding: 0.5em;
+  color: white;
+  border-radius: 1em;
+}
+
+button {
+  background-color: black;
+  border: 0.1em solid darkgrey;
+  border-radius: 1em;
+  padding: 0.5em 2em;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
